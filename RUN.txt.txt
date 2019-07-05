@@ -1,0 +1,16 @@
+Prerequests:
+    1. Node Package Manager
+    2. Express
+    3. MySQL 
+    4. Angular (Combined Optional)
+Run Method:
+    1. Go to project folder directory via command prompt or code editors
+    2. Run command 'node app.js'
+    3. Below localhost link violated 'http://127.0.0.1:3000'
+    4. Click the link or copy and paste your favorite browser
+    5. app will be run.
+
+http://127.0.0.1:3000 = Shows index page which just contains a simple text title
+http://127.0.0.1:3000/users = Shows list of users
+http://127.0.0.1:3000/users/add = Shows form to add new user
+http://127.0.0.1:3000/users/edit/ID = Shows form to edit user. ID can be any number

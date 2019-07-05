@@ -1,0 +1,53 @@
+<!--
+including header content which is common for all pages
+-->
+<%- include ../layouts/header.ejs %>	
+
+<% if (messages.error) { %>
+	<p style="color:red"><%- messages.error %></p>
+<% } %>
+
+<% if (messages.success) { %>
+	<p style="color:green"><%- messages.success %></p>
+<% } %>
+
+<div style="text-align: center">
+<form action="/tests/add" method="post" name="form1">
+	<table width="25%" border="0">
+		<div style = "table-layout: auto">
+		<tr> 
+			<td><b><font color = 'darkgreen'>Creator ID</font></b></td>
+			<td><input type="text" name="creator_id" id="creator_id" value="<%= creator_id %>" /></td>
+		</tr>
+		<tr> 
+			<td><b><font color = 'darkgreen'>Test Name</font></b></td>
+			<td><input type="text" name="test_name" value="<%= test_name %>" /></td>
+		</tr>
+		<tr> 
+			<td><b><font color = 'darkgreen'>Test Type</font></b></td>
+			<td><input type="text" name="test_type" value="<%= test_type %>" /></td>
+        </tr>
+        <tr>
+            <td><b><font color = 'darkgreen'>Test Description</font></b></td>
+            <td><input type="text" name="test_desc" value="<%= test_desc %>" /></td>
+        </tr>
+        <tr>
+            <td><b><font color = 'darkgreen'>Test Date</font></b></td>
+            <td><input type="text" name="test_date" value="<%= test_date %>" /></td>
+        </tr>
+        <tr>
+            <td><b><font color = 'darkgreen'>Test Time</font></b></td>
+            <td><input type="text" name="test_time" value="<%= test_time %>" /></td>
+        </tr>
+		<tr> 
+			<td></td>
+			<td><input type="submit" name="Submit" value="ADD" /></td>
+		</tr>
+		</div>
+	</table>
+</form>
+</div>
+<!--
+including footer content which is common for all pages
+-->
+<%- include ../layouts/footer.ejs %>
